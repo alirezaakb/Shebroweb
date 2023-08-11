@@ -10,6 +10,11 @@
     font-weight: bold;
 }
 
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -26,7 +31,7 @@ body{
 .container {
     max-width: 120rem;
     padding: 0 3.2rem;
-    margin: 4rem auto;
+    margin: 10rem auto;
 }
 
 
@@ -69,7 +74,7 @@ body{
 }
 
 .logo{
-    height: 3rem;
+    height: 4rem;
 }
 
 .main-nav-list {
@@ -86,7 +91,7 @@ body{
     text-decoration: none;
     color: #004b59;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     transition: all 0.3s;
 }
 
@@ -97,7 +102,7 @@ body{
 
 .main-nav-link.nav-job:link,
 .main-nav-link.nav-job:visited {
-    padding: 0.8rem 1.2rem;
+    padding: 1.2rem 2.4rem;
     border-radius: 9px;
     color: #fff;
     background-color: #0b7285;
@@ -114,17 +119,17 @@ body{
     background: linear-gradient(#c5f6fa,#e3fafc);
     width: 100%;
     height: 100%;
-    padding: 4.8rem 0 6rem 0;
+    padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
     max-width: 130rem;
-    margin: 0 auto;
+    margin: 5rem auto;
     padding: 0 3.2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 9.6rem;
-    align-items: flex-start;
+    align-items: center;
     backface-visibility: hidden;
 }
 
@@ -169,7 +174,7 @@ body{
 
 .heading-primary{
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 6.2rem;
     margin-bottom: 3rem;
     animation-name: moveInLeft;
     animation-duration: 1.2s;
@@ -178,7 +183,7 @@ body{
 }
 
 .hero-description {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 4.8rem;
     color: #5e5e5e;
@@ -195,47 +200,14 @@ body{
 
 }
 
-.delivered-meals {
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-    margin-top: 8rem;
-}
-
-.delivered-imgs {
-    display: flex;
-}
-
-.delivered-imgs img {
-    height: 4.8rem;
-    width: 4.8rem;
-    border-radius: 50%;
-    margin-right: -1.6rem;
-    border: 3px solid #fdf2e9;
-}
-
-.delivered-imgs img:last-child {
-    margin: 0;
-}
-
-.delivered-text {
-    font-size: 1.8rem;
-    font-weight: 600;
-}
-
-.delivered-text span {
-    color: #cf711f;
-    font-weight: 700;
-}
-
 .btn-hero,
 .btn-hero:link,
 .btn-hero:visited {
     display: inline-block;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
-    padding: 1rem 1.2rem;
+    padding: 1.6rem 3.2rem;
     border-radius: 9px;
     border: none;
     cursor: pointer;
@@ -269,25 +241,31 @@ body{
     box-shadow: inset 0 0 0 3px #fff;
 }
 
+
 .margin-left-sm{
     margin-left: 1.5rem;
 }
 
 .section-services{
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    padding: 1rem 10rem;
     animation-name: moveInTop;
     animation-duration: 1.2s;
     animation-timing-function: ease-out;
 }
 
+.btn-nav-mobile{
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     justify-items: center;
     align-items: center;
+    gap: 2.4rem;
 }
 
 .portfolio-cards{
@@ -302,25 +280,23 @@ body{
 .subheading{
     margin-top: 2rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.6rem;
     color: #0b7285;
 }
 
 .heading-secondary{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     padding: 1rem 10rem;
     line-height: normal;
     font-weight: normal;
     margin-bottom: 2rem;
 }
 
-
-
 .card{
     border: none;
     box-shadow: 0 2.4rem 3.8rem rgba(0, 0, 0, 0.075);
-    padding: 1rem;
+    padding: 1.2rem;
     transition: all 0.3s;
 }
 
@@ -337,11 +313,17 @@ body{
 
 .card-title{
     font-weight: bold;
+    font-size: 2rem;
 }
 
 .card-text{
     line-height: normal;
     color: #5e5e5e;
+    font-size: 1.6rem;
+}
+
+.btn-primary{
+    font-size: 1.6rem;
 }
 
 
@@ -363,7 +345,7 @@ body{
 }
 
 .btn-card{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: #ffffff;
 }
 
@@ -374,16 +356,17 @@ body{
 .portfolio-card:hover .btn-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 1.2rem;
     position: absolute;
     bottom: 1rem;
+    right: 4rem;
     transition: 1s;
 }
 
 
 .portfolio-card:hover .text-portfolio{
-    opacity: 0%;
+    opacity: 0;
 }
 
 .section-job {
@@ -405,8 +388,7 @@ body{
     color: #004b59;
 }
 
-.job .heading-secondary {
-    font-size: 3rem;
+.job .subheading {
     color: #ffffff;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -414,10 +396,11 @@ body{
     padding: 0;
 }
 
-.job-text {
-    font-size: 1rem;
+.job .heading-secondary {
+    text-align: right;
+    padding-right: 0;
     line-height: 1.8;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
 }
 
 .job-img-box {
@@ -437,12 +420,12 @@ body{
     grid-template-columns: 1fr 1fr;
     column-gap: 3.2rem;
     row-gap: 1.5rem;
+    margin-top: 2.4rem;
 }
 
 .job-form label {
     display: block;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.6rem;
     margin-bottom: 1.2rem;
     color: #ffffff;
 }
@@ -451,7 +434,7 @@ body{
 .job-form select {
     width: 100%;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-family: inherit;
     color: inherit;
     border: none;
@@ -472,13 +455,13 @@ body{
 .btn--form{
     color: #0b7285;
     background-color: #e3fafc;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin-top: 1.5rem;
+    border-radius: 9px;
 }
 
 .btn--form:hover{
     color: #e3fafc;
-    font-size: 2rem;
 }
 
 input::file-selector-button {
@@ -496,7 +479,7 @@ input::file-selector-button {
 }
 
 .logo-com{
-    width: 6rem;
+    max-width: 9.6rem;
     filter: grayscale(100%);
     opacity: 50%;
     transition: 1s;
@@ -504,10 +487,6 @@ input::file-selector-button {
 
 .logo-com:hover{
     opacity: 80%;
-}
-
-.section-portfolio{
-    margin-bottom: 10rem;
 }
 
 .section-job{
@@ -523,13 +502,19 @@ input::file-selector-button {
     margin-bottom: 0;
 }
 
+.card-img-top{
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*********************************/
 /*FOOTER*/
 /*********************************/
 
 .footer {
-    padding: 5rem 0;
+    padding: 1rem 0;
     border-top: 1px solid #eee;
 }
 
@@ -551,7 +536,7 @@ input::file-selector-button {
     margin-right: 0.5rem;
     list-style: none;
     display: flex;
-    gap: 2.2rem;
+    gap: 3.2rem;
 }
 
 .social-icon {
@@ -566,27 +551,28 @@ input::file-selector-button {
 }
 
 .copyright {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: #767676;
     margin-top: auto;
 }
 
 .footer-heading {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 2rem;
 }
 
 .contacts {
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 2.4rem;
     line-height: 1.6;
 }
 
 .address {
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.6rem;
     color: #767676;
+    font-size: 1.6rem;
 }
 
 .footer-nav {
@@ -599,7 +585,7 @@ input::file-selector-button {
 .footer-link:link,
 .footer-link:visited {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.6rem;
     color: #767676;
     transition: all 0.3s;
 }
