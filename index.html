@@ -18,9 +18,11 @@
         <ul class="main-nav-list">
             <li><a class="main-nav-link" href="#section-services">خدمات ما</a></li>
             <li><a class="main-nav-link" href="#portfolio">نمونه کارها</a></li>
-            <li><a class="main-nav-link" href="#">درباره ما</a></li>
+            <li><a class="main-nav-link" href="#about">درباره ما</a></li>
             <li><a class="main-nav-link" href="#job">جذب نیرو</a></li>
-            <li><a class="main-nav-link nav-job" href="#">تماس با ما</a></li>
+            <li><button class="contact-btn">
+                تماس با ما
+            </button></li>
         </ul>
     </nav>
     <button class="btn-nav-mobile">
@@ -57,6 +59,53 @@
         </div>
     </div>
 </section>
+
+    <div class="contact">
+        <div class="close-contact-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+        </div>
+        <div class="section-heading">
+            <h2 class="subheading">تماس با ما</h2>
+            <span class="heading-secondary">از طریق این فرم با ما در تماس باشید</span>
+        </div>
+
+        <form class="contact-form" action="#">
+            <div>
+                <label for="full-name-c">نام و نام خانوادگی *</label>
+                <input
+                        id="full-name-c"
+                        type="text"
+                        required
+                />
+            </div>
+
+            <div>
+                <label for="email-c">ایمیل *</label>
+                <input
+                        id="email-c"
+                        type="email"
+                        required
+                />
+            </div>
+
+            <div>
+                <label for="subject-c">عنوان پیام*</label>
+                <input
+                        id="subject-c"
+                        type="text"
+                        required
+                />
+            </div>
+
+            <div class="textarea">
+                <label for="text-c" class="form-label">پیام شما*</label>
+                <textarea id="text-c" rows="10" cols="33" required></textarea>
+            </div>
+
+
+            <button class="btn btn--form">ارسال</button>
+        </form>
+    </div>
 
     <section id="section-services" class="section-services">
         <div class="container">
@@ -153,6 +202,23 @@
 
     </section>
 
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="subheading">درباره ما</h2>
+            </div>
+            <p class="about-text">شرکت فناور آیریک پردازش شبرو فعالیت خود
+                را به صورت رسمی  از  آبان ماه سال 1394 آغاز  و  توانست  با  پیوستن به
+                سازمان نظام صنفی رایانه و داشتن عضویت در پارک علم و  فناوری لرستان
+                به سوی اهداف و رسالت خود گام های محکم تری بردارد.
+در این مدت کوتاه با  کسب رزومه ای قابل توجه  در  زمینه های همکاری و
+                مشاوره و طراحی و توسعه سامانه های تحت وب و نرم افزار های سفارش مشتری به ارگان های دولتی و خصوصی و دانشگاه ها و
+                نهاد های آموزشی و حمایتی ،به جایگاه ویژه ای در بین رقبای خود نائل آید و با اشتیاقی بی پایان
+                ، با بهره گیری از علم نوین روز دنیا به نوآوری و بهبود مداوم کیفیت تولیدات و خدمات خود و با در نظر گرفتن نیازهای مشتریان و حرکت به سمت پاسخ دهی به
+                این نیازها ، تلاش می‌کند و در راستای رسیدن به اهداف خود استوارتر  و باانگیزه تر از هر روز اقدام می نماید.</p>
+        </div>
+    </section>
+
     <section class="companions-section">
         <div class="container container-com">
             <div class="section-heading">
@@ -227,6 +293,7 @@
             </div>
         </div>
     </section>
+
 
 </main>
 

@@ -13,6 +13,7 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -246,6 +247,52 @@ body{
     margin-left: 1.5rem;
 }
 
+.contact-btn{
+    color: #ffffff;
+    font-size: 1.8rem;
+    background-color: #0b7285;
+    border: none;
+    padding: 1.6rem 2.4rem;
+    border-radius: 1rem;
+}
+
+.contact{
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    z-index: 8888;
+}
+
+.contact-open{
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.close-contact-btn{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+    z-index: 9999;
+}
+
+
 .section-services{
     animation-name: moveInTop;
     animation-duration: 1.2s;
@@ -415,6 +462,46 @@ body{
     background-position: center;
 }
 
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-form label{
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+    color: #004b59;
+}
+
+.contact-form input,
+.contact-form select {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #e3fafc;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #e3fafc;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
 .job-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -506,6 +593,33 @@ input::file-selector-button {
     max-width: 64rem;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+.about-section{
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(12, 133, 153, 0.82),
+            rgba(40, 175, 190, 0.83)
+    ),
+    url("../img/about.jpg");
+    padding: 1.6rem;
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+
+.about-section .subheading{
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 4.2rem;
+}
+
+.about-text{
+    padding: 1rem;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: normal;
 }
 
 

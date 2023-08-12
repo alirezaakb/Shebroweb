@@ -23,6 +23,15 @@
             font-size: 50%;
         }
 
+        .contact{
+            flex-direction: column;
+        }
+
+        .contact-btn{
+            font-size: 3rem;
+        }
+
+
         .heading-primary{
             font-size: 3.6rem;
         }
@@ -33,7 +42,7 @@
 
         .btn-nav-mobile{
             display: block;
-            z-index: 9999;
+            z-index: 7777;
         }
 
         .nav-mobile-icon{
