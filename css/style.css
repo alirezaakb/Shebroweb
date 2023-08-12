@@ -252,46 +252,9 @@ body{
     font-size: 1.8rem;
     background-color: #0b7285;
     border: none;
-    padding: 1.6rem 2.4rem;
+    padding: 1.2rem 2rem;
     border-radius: 1rem;
 }
-
-.contact{
-    background-color: rgba(255, 255, 255, 0.9);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(10px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in;
-    z-index: 8888;
-}
-
-.contact-open{
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: auto;
-    visibility: visible;
-}
-
-.close-contact-btn{
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-    width: 4rem;
-    height: 4rem;
-    cursor: pointer;
-    border: none;
-    background: none;
-    z-index: 9999;
-}
-
 
 .section-services{
     animation-name: moveInTop;
@@ -466,7 +429,9 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 2rem;
 }
+
 
 .contact-form label{
     display: block;
@@ -562,6 +527,7 @@ input::file-selector-button {
 .companions{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
 }
 
@@ -639,6 +605,8 @@ input::file-selector-button {
 .logo-col {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer-logo {
