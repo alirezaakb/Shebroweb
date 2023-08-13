@@ -2,17 +2,21 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
     <title>شبرو وب</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/queries.css">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" rel="stylesheet">
+    <script crossorigin="anonymous"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
 </head>
 <body dir="rtl">
 <header class="header">
     <a href="#">
-        <img class="logo" alt="Shebroweb logo" src="./img/shebroweb-logo.png" />
+        <img alt="Shebroweb logo" class="logo" src="./img/shebroweb-logo.png"/>
     </a>
     <nav class="main-nav">
         <ul class="main-nav-list">
@@ -20,63 +24,69 @@
             <li><a class="main-nav-link" href="#portfolio">نمونه کارها</a></li>
             <li><a class="main-nav-link" href="#about">درباره ما</a></li>
             <li><a class="main-nav-link" href="#job">جذب نیرو</a></li>
-            <li><button type="button" class="contact-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                تماس با ما
-            </button></li>
+            <li>
+                <button class="contact-btn" data-bs-target="#staticBackdrop" data-bs-toggle="modal" type="button">
+                    تماس با ما
+                </button>
+            </li>
         </ul>
     </nav>
     <button class="btn-nav-mobile">
-        <svg xmlns="http://www.w3.org/2000/svg" class="nav-mobile-icon menu-icon" viewBox="0 0 256 256" ><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="nav-mobile-icon close-icon" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+        <svg class="nav-mobile-icon menu-icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+        </svg>
+        <svg class="nav-mobile-icon close-icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+            <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+        </svg>
     </button>
 
 </header>
 
 
-
 <main>
-<section class="section-hero">
-    <div class="hero">
-        <div class="hero-text-box">
-            <h1 class="heading-primary">
-              طراحی سایت و اپلیکیشن با شبرو وب
-            </h1>
-            <p class="hero-description">
-            شبرو وب متشکل از توسعه دهندگان متخصص در زمینه های طراحی سایت ،
-                طراحی اپلیکیشن هوشمند ،طراحی لوگو و سئو سایت در تلاش است که همراه
-                با تکنولوژی های روز دنیا خدمات خود را به بهترین شکل ممکن
-                در اختیار مشتریان و مخاطبان خود ارائه دهد.
-            </p>
-            <a href="#" class="btn-hero btn-hero--full margin-left-sm">مشاوره رایگان</a>
-            <a href="#" class="btn-hero btn-hero--outline">بیشتر بدانید &darr;</a>
+    <section class="section-hero">
+        <div class="hero">
+            <div class="hero-text-box">
+                <h1 class="heading-primary">
+                    طراحی سایت و اپلیکیشن با شبرو وب
+                </h1>
+                <p class="hero-description">
+                    شبرو وب متشکل از توسعه دهندگان متخصص در زمینه های طراحی سایت ،
+                    طراحی اپلیکیشن هوشمند ،طراحی لوگو و سئو سایت در تلاش است که همراه
+                    با تکنولوژی های روز دنیا خدمات خود را به بهترین شکل ممکن
+                    در اختیار مشتریان و مخاطبان خود ارائه دهد.
+                </p>
+                <a class="btn-hero btn-hero--full margin-left-sm" href="#">مشاوره رایگان</a>
+                <a class="btn-hero btn-hero--outline" href="#">بیشتر بدانید &darr;</a>
+            </div>
+            <div class="hero-img-box">
+                <img
+                        alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                        class="hero-img"
+                        src="./img/undraw_heatmap_uyye.svg"
+                />
+            </div>
         </div>
-        <div class="hero-img-box">
-            <img
-                    src="./img/undraw_heatmap_uyye.svg"
-                    class="hero-img"
-                    alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-            />
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-keyboard="false"
+         id="staticBackdrop" tabindex="-1">
         <div class="modal-dialog z-3">
             <div class="modal-content">
                 <div class="modal-header d-flex justify-content-between align-items-center">
                     <h1 class="modal-title fs-3" id="staticBackdropLabel">تماس با ما</h1>
-                    <button type="button" class="btn-close m-1" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button aria-label="Close" class="btn-close m-1" data-bs-dismiss="modal" type="button"></button>
                 </div>
                 <div class="modal-body">
-                    <form class="contact-form" action="#">
+                    <form action="#" class="contact-form">
                         <div>
                             <label for="full-name-c">نام و نام خانوادگی *</label>
                             <input
                                     id="full-name-c"
-                                    type="text"
                                     required
+                                    type="text"
                             />
                         </div>
 
@@ -84,8 +94,8 @@
                             <label for="email-c">ایمیل *</label>
                             <input
                                     id="email-c"
-                                    type="email"
                                     required
+                                    type="email"
                             />
                         </div>
 
@@ -93,115 +103,118 @@
                             <label for="subject-c">عنوان پیام*</label>
                             <input
                                     id="subject-c"
-                                    type="text"
                                     required
+                                    type="text"
                             />
                         </div>
 
                         <div class="textarea">
-                            <label for="text-c" class="form-label">پیام شما*</label>
-                            <textarea id="text-c" rows="10" cols="33" required></textarea>
+                            <label class="form-label" for="text-c">پیام شما*</label>
+                            <textarea id="text-c" required rows="7rem"></textarea>
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary btn--form">ارسال</button>
+                    <button class="btn btn-primary btn--form" type="button">ارسال</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <section id="section-services" class="section-services">
+    <section class="section-services" id="section-services">
         <div class="container">
-        <div class="section-heading">
-        <h2 class="subheading">خدمات ما</h2>
-        <span class="heading-secondary">طراحی سایت ، طراحی اپلیکیشن و سئو سایت
+            <div class="section-heading">
+                <h2 class="subheading">خدمات ما</h2>
+                <span class="heading-secondary">طراحی سایت ، طراحی اپلیکیشن و سئو سایت
             از جمله خدماتی است که شبرو وب ارائه می دهد ، امید است که
             بتوانید در کنار تیم تخصصی و باتجربه این مجموعه به اهداف خود برسید.</span>
-        </div>
-
-        <div class="cards">
-        <div class="card">
-            <img src="./img/web-design.svg" class="card-img-top" alt="web design">
-            <div class="card-body">
-                <h3 class="card-title">طراحی سایت</h3>
-                <p class="card-text">طراحی و پیاده‌سازی نرم‌افزار‌های تحت وب به صورت جدا یا در قالب پکیج های مختلف و با تنوع طرح های مختلف به صورت کاملاً اختصاصی و سفارشی</p>
-                <a href="#" class="btn btn-primary">سفارش دهید!</a>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="./img/application.svg" class="card-img-top" alt="web design">
-            <div class="card-body">
-                <h3 class="card-title">طراحی اپلیکیشن</h3>
-                <p class="card-text">وب سایت و اپلیکیشن حرفه ای ، مهمترین قدم برای پیشرفت هر کسب و کاری است. با سفارش طراحی وب سایت کسب و کار خود را رونق ببخشید.</p>
-                <a href="#" class="btn btn-primary">سفارش دهید!</a>
-            </div>
-        </div>
+            <div class="cards">
+                <div class="card">
+                    <img alt="web design" class="card-img-top" src="./img/web-design.svg">
+                    <div class="card-body">
+                        <h3 class="card-title">طراحی سایت</h3>
+                        <p class="card-text">طراحی و پیاده‌سازی نرم‌افزار‌های تحت وب به صورت جدا یا در قالب پکیج های
+                            مختلف و با تنوع طرح های مختلف به صورت کاملاً اختصاصی و سفارشی</p>
+                        <a class="btn btn-primary" href="#">سفارش دهید!</a>
+                    </div>
+                </div>
 
-        <div class="card">
-            <img src="./img/seo.svg" class="card-img-top" alt="web design">
-            <div class="card-body">
-                <h3 class="card-title">سئو سایت</h3>
-                <p class="card-text">افزایش رتبه سایت در نتایج گوگل ، تشخیص کلمات کلیدی برای سئو ، بالا بردن بازدید سایت و استفاده از ابزار های تخصصی سئو برای بهبود عملکرد سایت</p>
-                <a href="#" class="btn btn-primary">سفارش دهید!</a>
+                <div class="card">
+                    <img alt="web design" class="card-img-top" src="./img/application.svg">
+                    <div class="card-body">
+                        <h3 class="card-title">طراحی اپلیکیشن</h3>
+                        <p class="card-text">وب سایت و اپلیکیشن حرفه ای ، مهمترین قدم برای پیشرفت هر کسب و کاری است. با
+                            سفارش طراحی وب سایت کسب و کار خود را رونق ببخشید.</p>
+                        <a class="btn btn-primary" href="#">سفارش دهید!</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img alt="web design" class="card-img-top" src="./img/seo.svg">
+                    <div class="card-body">
+                        <h3 class="card-title">سئو سایت</h3>
+                        <p class="card-text">افزایش رتبه سایت در نتایج گوگل ، تشخیص کلمات کلیدی برای سئو ، بالا بردن
+                            بازدید سایت و استفاده از ابزار های تخصصی سئو برای بهبود عملکرد سایت</p>
+                        <a class="btn btn-primary" href="#">سفارش دهید!</a>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
         </div>
     </section>
 
-    <section id="portfolio" class="section-portfolio">
-            <div class="container">
-                <div class="section-heading">
-                    <h2 class="subheading">نمونه کارها</h2>
-                    <span class="heading-secondary">شبرو وب انتخاب صدها شرکت و سازمان دولتی و خصوصی</span>
-                </div>
-                <div class="cards portfolio-cards">
+    <section class="section-portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="subheading">نمونه کارها</h2>
+                <span class="heading-secondary">شبرو وب انتخاب صدها شرکت و سازمان دولتی و خصوصی</span>
+            </div>
+            <div class="cards portfolio-cards">
                 <div class="card portfolio-card">
-                    <img src="./img/p1.jpg" class="card-img-top" alt="...">
+                    <img alt="..." class="card-img-top" src="./img/p1.jpg">
                     <div class="card-body">
                         <span class="card-text text-portfolio">طراحی سایت یک</span>
                         <div class="btn-cards">
-                        <a href="#" class="btn btn-card">اطلاعات بیشتر</a>
-                        <a href="#" class="btn btn-card bg-dark">مشاهده وب سایت</a>
+                            <a class="btn btn-card" href="#">اطلاعات بیشتر</a>
+                            <a class="btn btn-card bg-dark" href="#">مشاهده وب سایت</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="card portfolio-card">
-                    <img src="./img/p2.jpg" class="card-img-top" alt="...">
+                    <img alt="..." class="card-img-top" src="./img/p2.jpg">
                     <div class="card-body">
                         <span class="card-text text-portfolio">طراحی سایت دو</span>
                         <div class="btn-cards">
-                            <a href="#" class="btn btn-card">اطلاعات بیشتر</a>
-                            <a href="#" class="btn btn-card bg-dark">مشاهده وب سایت</a>
+                            <a class="btn btn-card" href="#">اطلاعات بیشتر</a>
+                            <a class="btn btn-card bg-dark" href="#">مشاهده وب سایت</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="card portfolio-card">
-                    <img src="./img/p3.jpg" class="card-img-top" alt="...">
+                    <img alt="..." class="card-img-top" src="./img/p3.jpg">
                     <div class="card-body">
                         <span class="card-text text-portfolio">طراحی سایت سه</span>
                         <div class="btn-cards">
-                            <a href="#" class="btn btn-card">اطلاعات بیشتر</a>
-                            <a href="#" class="btn btn-card bg-dark">مشاهده وب سایت</a>
+                            <a class="btn btn-card" href="#">اطلاعات بیشتر</a>
+                            <a class="btn btn-card bg-dark" href="#">مشاهده وب سایت</a>
                         </div>
                     </div>
                 </div>
-                    <div class="card portfolio-card">
-                        <img src="./img/p4.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <span class="card-text text-portfolio">طراحی سایت چهار</span>
-                            <div class="btn-cards">
-                                <a href="#" class="btn btn-card">اطلاعات بیشتر</a>
-                                <a href="#" class="btn btn-card bg-dark">مشاهده وب سایت</a>
-                            </div>
+                <div class="card portfolio-card">
+                    <img alt="..." class="card-img-top" src="./img/p4.jpg">
+                    <div class="card-body">
+                        <span class="card-text text-portfolio">طراحی سایت چهار</span>
+                        <div class="btn-cards">
+                            <a class="btn btn-card" href="#">اطلاعات بیشتر</a>
+                            <a class="btn btn-card bg-dark" href="#">مشاهده وب سایت</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
 
     </section>
@@ -212,14 +225,17 @@
                 <h2 class="subheading">درباره ما</h2>
             </div>
             <p class="about-text">شرکت فناور آیریک پردازش شبرو فعالیت خود
-                را به صورت رسمی  از  آبان ماه سال 1394 آغاز  و  توانست  با  پیوستن به
-                سازمان نظام صنفی رایانه و داشتن عضویت در پارک علم و  فناوری لرستان
+                را به صورت رسمی از آبان ماه سال 1394 آغاز و توانست با پیوستن به
+                سازمان نظام صنفی رایانه و داشتن عضویت در پارک علم و فناوری لرستان
                 به سوی اهداف و رسالت خود گام های محکم تری بردارد.
-در این مدت کوتاه با  کسب رزومه ای قابل توجه  در  زمینه های همکاری و
-                مشاوره و طراحی و توسعه سامانه های تحت وب و نرم افزار های سفارش مشتری به ارگان های دولتی و خصوصی و دانشگاه ها و
+                در این مدت کوتاه با کسب رزومه ای قابل توجه در زمینه های همکاری و
+                مشاوره و طراحی و توسعه سامانه های تحت وب و نرم افزار های سفارش مشتری به ارگان های دولتی و خصوصی و
+                دانشگاه ها و
                 نهاد های آموزشی و حمایتی ،به جایگاه ویژه ای در بین رقبای خود نائل آید و با اشتیاقی بی پایان
-                ، با بهره گیری از علم نوین روز دنیا به نوآوری و بهبود مداوم کیفیت تولیدات و خدمات خود و با در نظر گرفتن نیازهای مشتریان و حرکت به سمت پاسخ دهی به
-                این نیازها ، تلاش می‌کند و در راستای رسیدن به اهداف خود استوارتر  و باانگیزه تر از هر روز اقدام می نماید.</p>
+                ، با بهره گیری از علم نوین روز دنیا به نوآوری و بهبود مداوم کیفیت تولیدات و خدمات خود و با در نظر گرفتن
+                نیازهای مشتریان و حرکت به سمت پاسخ دهی به
+                این نیازها ، تلاش می‌کند و در راستای رسیدن به اهداف خود استوارتر و باانگیزه تر از هر روز اقدام می
+                نماید.</p>
         </div>
     </section>
 
@@ -230,13 +246,11 @@
                 <span class="heading-secondary">مشتریان ما اعتبار ما هستند</span>
             </div>
             <div class="companions">
-                <img class="logo-com" src="./img/1485166922-.jpg">
-                <img class="logo-com" src="./img/1485166922-.jpg">
-                <img class="logo-com" src="./img/1485166922-.jpg">
-                <img class="logo-com" src="./img/1485166922-.jpg">
-
+                <img alt="logo" class="logo-com" src="./img/1485166922-.jpg">
+                <img alt="logo" class="logo-com" src="./img/1485166922-.jpg">
+                <img alt="logo" class="logo-com" src="./img/1485166922-.jpg">
+                <img alt="logo" class="logo-com" src="./img/1485166922-.jpg">
             </div>
-
         </div>
     </section>
 
@@ -249,14 +263,14 @@
                          شرکت شبرو وب جهت تکمیل کادر خود به نیروی دورکار نیاز دارد. اطلاعات و رزومه خود را با فرم زیر برای ما ارسال کنید.
                     </span>
 
-                    <form class="job-form" action="#">
+                    <form action="#" class="job-form">
                         <div>
                             <label for="full-name">نام و نام خانوادگی *</label>
                             <input
                                     id="full-name"
-                                    type="text"
                                     placeholder="علی محمدی"
                                     required
+                                    type="text"
                             />
                         </div>
 
@@ -264,9 +278,9 @@
                             <label for="email">ایمیل *</label>
                             <input
                                     id="email"
-                                    type="email"
                                     placeholder="me@example.com"
                                     required
+                                    type="email"
                             />
                         </div>
 
@@ -274,15 +288,15 @@
                             <label for="contact">شماره تماس *</label>
                             <input
                                     id="contact"
-                                    type="text"
                                     placeholder="*******09"
                                     required
+                                    type="text"
                             />
                         </div>
 
                         <div>
-                            <label for="resume" class="form-label">فایل رزومه</label>
-                            <input type="file" name="resume" id="resume"/>
+                            <label class="form-label" for="resume">فایل رزومه</label>
+                            <input id="resume" name="resume" type="file"/>
                         </div>
 
 
@@ -290,9 +304,9 @@
                     </form>
                 </div>
                 <div
+                        aria-label="hiring"
                         class="job-img-box"
                         role="img"
-                        aria-label="hiring"
                 ></div>
             </div>
         </div>
@@ -304,23 +318,24 @@
 <footer class="footer">
     <div class="container grid grid--footer">
         <div class="logo-col">
-            <a href="#" class="footer-logo">
-                <img class="logo" alt="Shebroweb logo" src="./img/shebroweb-logo.png" />
+            <a class="footer-logo" href="#">
+                <img alt="Shebroweb logo" class="logo" src="./img/shebroweb-logo.png"/>
             </a>
 
 
             <ul class="social-links">
                 <li>
-                    <a class="footer-link" href="#"><img class="social-icon" src="./img/eitaa.svg"></a>
+                    <a class="footer-link" href="#"><img alt="eitaa" class="social-icon" src="./img/eitaa.svg"></a>
                 </li>
                 <li>
-                    <a class="footer-link" href="#"><img class="social-icon" src="./img/telegram.svg"></a>
+                    <a class="footer-link" href="#"><img alt="telegram" class="social-icon"
+                                                         src="./img/telegram.svg"></a>
                 </li>
                 <li>
-                    <a class="footer-link" href="#"><img class="social-icon" src="./img/instagram.svg"></a>
+                    <a class="footer-link" href="#"><img alt="instagram" class="social-icon" src="./img/instagram.svg"></a>
                 </li>
                 <li>
-                    <a class="footer-link" href="#"><img class="social-icon" src="./img/aparat.svg"></a>
+                    <a class="footer-link" href="#"><img alt="aparat" class="social-icon" src="./img/aparat.svg"></a>
                 </li>
             </ul>
 
@@ -355,13 +370,12 @@
                 </p>
                 <p>
                     <a class="footer-link" href="tel:06642455156">06642455156</a
-                    ><br />
+                    ><br/>
                     <a class="footer-link" href="mailto:Ayrikshebro@gmail.com">Ayrikshebro@gmail.com</a>
                 </p>
             </address>
         </div>
     </div>
 </footer>
-<script defer src="js/script.js"></script>
 </body>
 </html>
